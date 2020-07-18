@@ -1,14 +1,23 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package Repositorio;
 
-/**
- *
- * @author ramom
- */
+package Repositorio;
+import java.util.ArrayList;
+import java.util.List;
+import Modelo.Cliente;
+
 public class ClienteRepositorio {
+
+    private static List<Cliente> clientes;
+    
+    public ClienteRepositorio(){
+        if(clientes == null){
+            clientes = new ArrayList<Cliente>();
+        }
+    }
+    
+    public void adicionarCliente(Cliente cliente){
+        clientes.add(cliente);
+        
+    }
+    
     
 }
