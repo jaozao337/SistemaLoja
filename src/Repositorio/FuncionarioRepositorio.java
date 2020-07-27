@@ -5,10 +5,20 @@
  */
 package Repositorio;
 
+import Modelo.Funcionario;
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author ramom
  */
 public class FuncionarioRepositorio {
+    private static List<Funcionario> funcionarios;
     
+     public FuncionarioRepositorio(){
+        if(funcionarios == null){
+            funcionarios = new ArrayList<Funcionario>();
+        }
+    }
 }
